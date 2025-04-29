@@ -1,0 +1,693 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #D9ED9C;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #232525;
+}
+body{
+    background-image: linear-gradient(to right,#232525,#334636,#406444);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: transparent;
+    /* position: fixed; */
+    position: absolute;
+    z-index: 20;
+}
+.nav-transperent {
+    background-color: transparent;
+    /* position: fixed; */
+}
+
+.nav-color{
+    background-color: rgb(25 ,29 ,28);
+    border-radius: 30px;
+    position: fixed;
+    padding: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+  }
+
+nav > a{
+    color: white;
+    text-decoration: underline;
+    font-family: "Palanquin Dark", sans-serif;
+    font-size: 20px;
+    margin: 1.5rem;
+}
+
+nav > a:hover{
+    color:#D9ED9C;
+}
+
+header > button{
+    font-family: "Palanquin Dark", sans-serif;
+    color: #D9ED9C;
+    font-size: 24px;
+    width: 150px;
+    height: 54px;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 10px 10px #262525;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    gap: 600px;
+}
+
+#home{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+#hero-section-text{
+    margin-left: 50px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Palanquin Dark", sans-serif;
+    
+}
+
+.icons-hero-section{
+    width: max-content;
+}
+
+#hero-section-text > p{
+    width: 350px;
+    height: 55px;
+    border-radius: 20px;
+    color: #D9ED9C;
+    background-color: #252E28;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero-heading-white{
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-heading-green{
+    color: #D9ED9C;
+    font-weight: 400;
+    font-size: 64px;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+
+.icons-hero-section{
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hero-image{
+    margin-right: 0;
+    padding-right: 0;
+}
+
+#products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #191D1C;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    gap: 40px;
+}
+
+#products > h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: "Palanquin Dark", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #D9ED9C;
+    font-weight: 400;
+    padding-top: 70px;
+}
+
+#product-List{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 70px;
+    flex-wrap: wrap;
+
+}
+
+.product-Elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-Elements > a {
+    text-decoration: underline;
+}
+
+.product-Elements:hover{
+    color: #D9ED9C;
+}
+
+.product-Elements:hover  > .product-container {
+    display: block;
+}
+
+.product-container {
+    display: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Palanquin Dark", sans-serif;
+    position: absolute;
+    background-color: #2C372E;
+    width: 250px;
+    border-radius: 30px;
+    text-align: center;
+    top: 150px;
+    z-index: 10;
+}
+
+#why-us{
+    height: 100vh;
+}
+
+#why-us > h1{
+    color: white;
+    font-family: "Palanquin Dark", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.why-Us-content{
+    margin-top: 70px;
+    font-family: "Palanquin Dark", sans-serif;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+
+}
+
+.item-one > img, .item-two > img, .item-three > img{
+    width: 150px;
+    height: 150px;
+}
+
+.item-one, .item-two, .item-three{
+    box-shadow: 0 2px 2px 0 #1E1E1E, 0 2px 20px 0 #1E1E1E;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.container-one{
+    text-align: center;
+    width: 350px;
+    height: 110px;
+    background-color: #364F39;
+    border-radius: 40px;
+}
+
+.item-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.container-two{
+    text-align: center;
+    width: 350px;
+    height: 110px;
+    background-color: #222e25;
+    border-radius: 40px;
+}
+
+.item-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+    padding: 20px;
+}
+
+.container-three{
+    text-align: center;
+    width: 350px;
+    height: 130px;
+    background-color: #232525;
+    border-radius: 40px;
+}
+
+#user-Guide{
+    background-color: #191D1C;
+    font-family: "Palanquin Dark", sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-Guide > h2{
+    padding-top: 0;
+}
+
+#user-Guide > p{
+    width: 900px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+#user-Guide > a > button{
+    width: 160px;
+    height: 55px;
+    background-color: #D9ED9C;
+    border-radius: 10px;
+    font-family: "Palanquin Dark", sans-serif;
+    font-size: 24px;
+    color: #191D1C;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 2px 0 #D9ED9C, 0 2px 20px 0 #D9ED9C;
+}
+
+#app{
+    color: white;
+    height: 100vh;
+    font-family: "Palanquin Dark", sans-serif;
+}
+
+#app > h1{
+    font-size: 48px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.app-content{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25vh;
+}
+
+.button-and-text{
+    text-align: center;
+}
+.app-content > .button-and-text > button{
+    width: 240px;
+    height: 90px;
+    background-color: #1E1E1E;
+    color: #D9ED9C;
+    font-family: "Palanquin Dark", sans-serif;
+    font-size: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 6px 10px 0 #D9ED9C, 0 8px 15px 0 #D9ED9C;
+}
+
+.app-content > .button-and-text > p{
+    font-size: 24px;
+}
+
+footer{
+    height: 190px;
+    font-family: "Palanquin Dark", sans-serif;
+    background-color: #191D1C;
+    color: #2E3533;
+    text-align: center;
+}
+
+.footer-left{
+    color: white;
+    text-align: left;
+    margin-left: 80px;
+    padding-top: 40px;
+}
+
+.footer-right{
+    color: #D9ED9C;
+    font-size: 20px;
+    text-align: right;
+    padding-top: 20px;
+    margin-right: 80px;
+}
+
+.footer-icons{
+    cursor: pointer;
+}
+
+.footer-icons > a{
+    text-decoration: none;
+    color: transparent;
+    width: max-content;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width:1300px){
+    #home{
+        height: 700px;
+    }
+
+    nav > a{
+        font-size: 12px;
+    }
+    header{
+        gap: 320px;
+    }
+
+    header > button{
+        width: 130px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .hero-image{
+        visibility: hidden;
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero-heading-green, .hero-heading-white{
+        font-size: 50px;
+    }
+
+    #hero-section-text{
+        width: 465px;
+    }
+
+    #why-us{
+        height: auto;
+        padding-bottom: 100px;
+    }
+    .why-Us-content{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    #user-Guide{
+        padding-bottom: 100px;
+    }
+
+    #user-Guide > p{
+        width: 700px;
+        font-size: 20px;   
+    }
+
+    #app{
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .app-content > img {
+        width: 255px;
+        height: 135px;
+    }
+}
+
+
+@media (max-width:800px){
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #191D1C !important;
+        width: 100%;
+        /* position: absolute; */
+        top: 70px;
+        left: 0;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav > a{
+        font-size: 12px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    header > button{
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        display: none;
+    }
+
+    .nav-color {
+        position: absolute;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header{
+        background-color: #191D1C;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: 20px;
+        padding-bottom: 10px;
+        gap: 10px;
+        position: relative;
+    }
+
+    #home{
+        height: 400px;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-section{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-heading-white, .hero-heading-green{
+        font-size: 34px;
+        width: max-content;
+    }
+
+    #hero-section-text{
+        margin-top: 0;
+        margin-bottom: 90px;
+        width: max-content;
+    }
+
+    #hero-section-text > p{
+        width: 300px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .icons-hero-section{
+        width: 15px;
+        height: 15px;
+    }
+
+    .hero-image{
+        width: 25px;
+        height: 25px;
+        visibility: hidden;
+    }
+
+    #why-us{
+        height: 700px;
+    }
+    .why-Us-content{
+        margin: 0;
+        padding: 0;
+        height: 0;
+        margin-top: 250px;
+    }
+
+    .product-container{
+        width: 150px;
+        font-size: 12px;
+    }
+    .item-one > img, .item-two > img, .item-three > img{
+        display: none;
+    }
+
+    .item-one, .item-two, .item-three{
+        width: 100px;
+        height: 70px;
+        font-size: 18px;
+        position:relative;
+        border: none;
+        box-shadow: none;
+        gap: 0;
+    }
+
+    .item-one:hover, .item-two:hover, .item-three:hover{
+        box-shadow: none;
+    }
+
+
+    .container-one:hover, .container-two:hover, .container-three:hover{
+        box-shadow: none;
+    }
+
+    #user-Guide{
+        height: 600px;
+    }
+
+    #user-Guide > p{
+        width: 350px;
+        font-size: 16px;   
+    }
+
+    #user-Guide > button{
+        width: 90px;
+        height: 45px;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+
+    #app{
+        height: 600px;
+    }
+
+    #app > h1{
+        margin-top: 25px;
+        font-size: 35px;
+    }
+
+    .app-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 60px;
+    }
+
+    .app-content > img {
+        width: 190px;
+        height: 90px;
+    }
+
+    .app-content > .button-and-text > button{
+        width: 140px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .app-content > .button-and-text > p{
+        margin-top: 100px;
+        font-size: 20px;
+    }
+
+    .footer-content, footer, .footer-right {
+        font-size: 10px;
+    }
+
+    .footer-left{
+        margin-left: 20px;
+    }
+    .footer-right{
+        margin-top: 20px;
+        padding-left: 90px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer-icons{
+        display: flex;
+        position: relative;
+        left: 30px;
+        margin-right: 25px;
+        cursor: pointer;
+        gap:5px;
+    }
+
+    .footer-icons > a > img {
+        width: 30px;
+        height: 30px ;
+    }
+}
