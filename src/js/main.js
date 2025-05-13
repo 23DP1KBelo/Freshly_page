@@ -15,12 +15,12 @@ navLinks.forEach(link => {
 
 const nav = document.getElementById('nav');
 console.log(nav.classList)
-window.onscroll = function () { 
-    if (document.body.scrollTop >= 10 || document.documentElement.scrollTop >= 10 ) {
+window.onscroll = function () {
+    console.log(document.body.clientWidth)
+    if ((document.body.scrollTop >= 10 || document.documentElement.scrollTop >= 10) && document.body.clientWidth > 800) {
         nav.classList.add("nav-color");
         nav.classList.remove("nav-transperent");
-    } 
-    else {
+    } else {
         nav.classList.add("nav-transperent");
         nav.classList.remove("nav-color");
     }

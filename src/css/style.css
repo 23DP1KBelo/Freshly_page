@@ -59,7 +59,7 @@ nav > a:hover{
     color:#D9ED9C;
 }
 
-header > button{
+header > a > button{
     font-family: "Palanquin Dark", sans-serif;
     color: #D9ED9C;
     font-size: 24px;
@@ -93,7 +93,6 @@ header{
 .hero-section{
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
 }
 
 #hero-section-text{
@@ -223,7 +222,7 @@ h2{
 }
 
 #why-us{
-    height: 100vh;
+    height: 1000px;
 }
 
 #why-us > h1{
@@ -247,13 +246,8 @@ h2{
 }
 
 .item-one{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 50px;
     padding: 20px;
-
 }
 
 .item-one > img, .item-two > img, .item-three > img{
@@ -262,12 +256,16 @@ h2{
 }
 
 .item-one, .item-two, .item-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 2px 2px 0 #1E1E1E, 0 2px 20px 0 #1E1E1E;
     border-radius: 30px;
     cursor: pointer;
 }
 
-.container-one{
+.container-one {
     text-align: center;
     width: 350px;
     height: 110px;
@@ -275,11 +273,13 @@ h2{
     border-radius: 40px;
 }
 
-.item-two{
+.container-one, .container-two, .container-three {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.item-two{
     gap: 50px;
     padding: 20px;
 }
@@ -293,10 +293,6 @@ h2{
 }
 
 .item-three{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 27px;
     padding: 20px;
 }
@@ -313,7 +309,7 @@ h2{
     background-color: #191D1C;
     font-family: "Palanquin Dark", sans-serif;
     color: white;
-    height: 100vh;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,7 +342,7 @@ h2{
 
 #app{
     color: white;
-    height: 100vh;
+    height: 700px;
     font-family: "Palanquin Dark", sans-serif;
 }
 
@@ -368,7 +364,7 @@ h2{
 .button-and-text{
     text-align: center;
 }
-.app-content > .button-and-text > button{
+.app-content > .button-and-text > a > button{
     width: 240px;
     height: 90px;
     background-color: #1E1E1E;
@@ -425,7 +421,7 @@ footer{
 
 @media (max-width:1300px){
     #home{
-        height: 700px;
+        height: 500px;
     }
 
     nav > a{
@@ -435,7 +431,7 @@ footer{
         gap: 320px;
     }
 
-    header > button{
+    header > a > button{
         width: 130px;
         height: 40px;
         font-size: 20px;
@@ -460,6 +456,7 @@ footer{
         padding-bottom: 100px;
     }
     .why-Us-content{
+        font-size: 18px;
         margin-top: 50px;
         display: flex;
         flex-direction: column;
@@ -469,6 +466,19 @@ footer{
         gap: 40px;
     }
 
+    .item-one > img, .item-two > img, .item-three > img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .container-one, .container-two, .container-three{
+        height: 50px;
+    }
+
+    .container-one > p, .container-two > p, .container-three > p{
+        margin: 0;
+    }
+
     #user-Guide{
         padding-bottom: 100px;
     }
@@ -476,6 +486,11 @@ footer{
     #user-Guide > p{
         width: 700px;
         font-size: 20px;   
+    }
+
+    .product-container{
+        width: 175px;
+        font-size: 14px;
     }
 
     #app{
@@ -512,25 +527,23 @@ footer{
         text-align: center;
     }
 
-    header > button{
-        width: 100px;
-        height: 30px;
-        font-size: 12px;
+    header > a > button{
         display: none;
     }
 
     .nav-color {
-        position: absolute;
+        /* position: absolute; */
     }
 
     .menu-toggle {
         display: block;
+        position: relative;
+        left: 60px;
     }
 
     header{
         background-color: #191D1C;
         flex-direction: row;
-        justify-content: space-between;
         padding-inline: 20px;
         padding-bottom: 10px;
         gap: 10px;
@@ -651,10 +664,10 @@ footer{
         height: 90px;
     }
 
-    .app-content > .button-and-text > button{
-        width: 140px;
-        height: 50px;
-        font-size: 20px;
+    .app-content > .button-and-text > a > button{
+        width: 160px;
+        height: 70px;
+        font-size: 28px;
     }
 
     .app-content > .button-and-text > p{
